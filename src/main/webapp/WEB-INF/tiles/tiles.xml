@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN"
+        "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+    <definition name="index" template="/WEB-INF/view/index.jsp">
+        <put-attribute name="title" value="AtKtDeals"/>
+        <put-attribute name="header" value="/WEB-INF/view/header/header.jsp"/>
+        <put-attribute name="body" value="/WEB-INF/view/contects/body/body.jsp" cascade="true"/>
+        <put-attribute name="body1" value="/WEB-INF/view/contects/body/home/home.jsp" cascade="true"/>
+        <put-attribute name="footer" value="/WEB-INF/view/footer/footer.jsp"/>
+    </definition>
+</tiles-definitions>
