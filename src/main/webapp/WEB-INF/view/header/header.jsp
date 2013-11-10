@@ -21,13 +21,7 @@
                 <div class="navbar-header pull-right header-action-nav">
                     <ul class="nav navbar-nav">
                         <li>
-                            <a class="header-action-nav-a" href="#">
-                                <span class="header-action-nav-divider">Register</span>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a class="header-action-nav-a" href="#">
+                            <a class="header-action-nav-a" href="#" id="login-my-account">
                                 <span class="header-action-nav-divider">My Account</span>
                             </a>
                         </li>

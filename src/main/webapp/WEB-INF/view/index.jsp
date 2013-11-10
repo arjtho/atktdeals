@@ -35,13 +35,21 @@
     <!-- Less standard css -->
     <script src="resources/dist/less/less-1.4.1.min.js"></script>
 
-    <script src="resources/dist/custom/js/app-nav-toolbar.js"></script>
-
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
     <script src="resources/assets/js/html5shiv.js"></script>
     <script src="resources/assets/js/respond.min.js"></script>
     <![endif]-->
+
+    <script src="resources/dist/custom/js/ajax/atkt-ajax.js"></script>
+    <script src="resources/dist/custom/js/common/vanilla-model.js"></script>
+    <script src="resources/dist/custom/js/app-nav-toolbar.js"></script>
+    <script src="resources/dist/custom/js/login.js"></script>
+    <script>
+        $( document ).ready(function() {
+            AppNavToolbarSN.init();
+        });
+    </script>
 </head>
 
 <body>
@@ -52,9 +60,11 @@
 <%--Application Body Contents--%>
 <tiles:insertAttribute name="body"/>
 
+
+<tiles:insertAttribute name="vanilla-model"/>
+
 <%--Application Footer Contents--%>
 <tiles:insertAttribute name="footer" />
-
 
 </body>
 </html>
