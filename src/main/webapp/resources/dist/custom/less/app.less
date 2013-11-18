@@ -4,6 +4,14 @@
    background-color: @header-bg-color;
 }
 
+.welcome-user-style {
+  background-color: @header-bg-color !important;
+  border: 0px !important;
+  color:@action-menu-font-color !important;;
+  font:@action-menu-font !important;;
+  font-weight: bold;
+}
+
 .app-content-bg-color {
   background-color: @header-bg-color;
 }
@@ -34,6 +42,14 @@
   padding: 15px 30px 15px 30px !important;
   border-radius: 0px;
 }
+.app-buttons {
+  font:@action-menu-font;
+  padding: 10px 10px 10px 10px !important;
+  border-radius: 0px;
+  font-size: 12px !important;
+  border-radius: 3px;
+}
+
 .app-menu-divider {
   border-right: 1px solid lightgray;
 }
@@ -176,42 +192,72 @@ a:hover, a:visited, a:link, a:active  {
 }
 
 .vanilla-model-header {
-  padding: 10px !important;
+  padding: 3px !important;
   background-color: lightgrey;
+  font-size: 12px;
 }
 
-.valnilla-modal-body {
-  margin: 2px;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  border: 1px solid lightgrey;
+.vanilla-modal-body {
+    margin: 2px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: 1px solid lightgrey;
 }
 
 .login-label-header {
   font-weight: bold;
   color: gray;
-  line-height: 16px;
-  font-size: 15px;
-  margin-bottom: 16px;
+  line-height: 13px;
+  font-size: 12px;
+  margin-bottom: 12px;
+}
+
+.label-font-details {
+  font-weight: normal;
+  color: gray;
+  line-height: 13px;
+  font-size: 12px;
+  margin-bottom: 12px;
+  display: table;
 }
 
 .login-label {
-  font-weight: normal;
-  color: gray;
-  line-height: 14px;
-  font-size: 13px;
-  margin-bottom: 12px;
+  .label-font-details;
+  float:right;
+}
+
+.login-buttons {
+  .label-font-details;
+  float:left;
+}
+
+.login-label-inner{
+  display: table-cell;
+  height: 30px;
+  vertical-align: middle;
 }
 
 .login-fields {
   font-weight: normal;
   color: gray;
-  line-height: 24px;
-  font-size: 13px;
-  margin-bottom: 12px;
-  width: 250px;
+  line-height: 13px;
+  font-size: 12px;
+  height: 30px;
 }
 
+.validation-error-fields {
+  border: 1px solid @error-field-border-color;
+}
+
+.modal-title {
+  font-weight: bold;
+  margin-left: 12px;
+}
+
+.error-message-box {
+  display: table-cell;
+  vertical-align: middle;
+}
 
 body {
   margin-top: 0px;

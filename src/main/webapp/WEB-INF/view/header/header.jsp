@@ -19,18 +19,30 @@
                     </a>
                 </div>
                 <div class="navbar-header pull-right header-action-nav">
-                    <ul class="nav navbar-nav">
-                        <li>
-                            <a class="header-action-nav-a" href="#" id="login-my-account">
-                                <span class="header-action-nav-divider">My Account</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="header-action-nav-a" href="#">
-                                <span>Support</span>
-                            </a>
-                        </li>
-                    </ul>
+                   <div class="pull-left">
+                       <ul class="nav navbar-nav">
+                           <li>
+                               <a class="header-action-nav-a" href="#" id="login-my-account">
+                                   <span class="header-action-nav-divider">My Account</span>
+                               </a>
+                           </li>
+                           <li>
+                               <a class="header-action-nav-a" href="#">
+                                   <span>Support</span>
+                               </a>
+                           </li>
+                       </ul>
+                   </div>
+                    <div id="user-welcome-box" class="pull-right" style="display: none">
+                        <div class="btn-group open">
+                            <a class="btn btn-primary welcome-user-style" href="#"><i class="fa fa-user fa-fw"></i> Welcome <span id="user-welcome-name">Arjun</span></a>
+                            <a class="btn btn-primary dropdown-toggle welcome-user-style" data-toggle="dropdown" href="#">
+                                <span class="fa fa-caret-down"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#"><i class="fa fa-power-off"></i> Logout</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
             <!--header-bar-container -->
@@ -74,7 +86,7 @@
                             <div class="input-prepend">
                                 <input class="col-lg-10 search-input" type="text" placeholder="Type here to Search">
                                 <a class="btn btn-primary search-button">
-                                    <span class="add-on"><i class="icon-search"></i></span>
+                                    <span class="add-on"><i class="fa fa-search"></i></span>
                                 </a>
                             </div>
                         </div>

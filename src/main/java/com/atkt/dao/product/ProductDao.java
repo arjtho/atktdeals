@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * This Interface is implemented in ProductDaoImpl. which is used to get add and remove product.
  * Created with IntelliJ IDEA.
- * User: kranti
+ * UserJpa: kranti
  * Date: 11/2/13
  * Time: 10:00 PM
  * To change this template use File | Settings | File Templates.

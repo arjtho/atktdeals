@@ -96,6 +96,32 @@
                 request.fail(function (jqXHR, textStatus) {
                     AtKtAjax.onFail(jqXHR, textStatus, actionName)
                 });
+            },
+
+
+            /**
+             * Call this function to send the information to server and get the json response back.
+             * @param actionName
+             * @param url
+             * @param dataToSend
+             */
+            makeServerCallToGetJson: function (actionName, url, dataToSend) {
+
+                var request = $.ajax({
+                    url: url,
+                    type: "POST",
+                    data: JSON.stringify(dataToSend),
+                    dataType: "json",
+                    contentType: "application/json"
+                });
+
+                request.done(function (msg) {
+                    AtKtAjax.onSuccess(msg, actionName)
+                });
+
+                request.fail(function (jqXHR, textStatus) {
+                    AtKtAjax.onFail(jqXHR, textStatus, actionName)
+                });
             }
         }
     }());

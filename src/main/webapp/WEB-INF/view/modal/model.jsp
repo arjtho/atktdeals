@@ -9,12 +9,12 @@
 <!-- Modal -->
 <div class="modal fade" id="vanilla-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
-        <div class="modal-content">
+        <div id="vanilla-modal-contents" class="modal-content">
             <div class="modal-header vanilla-model-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title" id="vanilla-modal-title">Modal title</h4>
+                <div class="modal-title" id="vanilla-modal-title">Modal title</div>
             </div>
-            <div id="vanilla-modal-body" class="modal-body valnilla-modal-body">
+            <div id="vanilla-modal-body" class="modal-body vanilla-modal-body">
             </div>
         </div>
     </div>

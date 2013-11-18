@@ -42,6 +42,7 @@
     <![endif]-->
 
     <script src="resources/dist/custom/js/ajax/atkt-ajax.js"></script>
+    <script src="resources/dist/custom/js/common/validator.js"></script>
     <script src="resources/dist/custom/js/common/vanilla-model.js"></script>
     <script src="resources/dist/custom/js/app-nav-toolbar.js"></script>
     <script src="resources/dist/custom/js/login.js"></script>

@@ -10,7 +10,7 @@ import javax.persistence.Table;
 /**
  * Created with IntelliJ IDEA.
  * This class is used to hold product details returned as query result.
- * User: kranti
+ * UserJpa: kranti
  * Date: 11/2/13
  * Time: 9:46 PM
  * To change this template use File | Settings | File Templates.

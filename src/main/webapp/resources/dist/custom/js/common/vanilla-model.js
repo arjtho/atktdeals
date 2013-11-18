@@ -8,6 +8,8 @@
 (function (scope, $) {
     var AtKtVanillaModel = (function () {
         var vanilaDivId = "#vanilla-modal";
+
+        var vanillaModalContents = "#vanilla-modal-contents";
         var vanillaBody = "#vanilla-modal-body";
         var vanillaModalTitle = "#vanilla-modal-title";
         var defaultHeight = 400;
@@ -15,7 +17,6 @@
         return {
             init: function () {
                 $("#vanilla-modal").modal({ keyboard: false,show: false });
-                AtKtVanillaModel.setBodySize(defaultHeight, defaultWidth);
             },
 
             setBodySize:function(height, width){
@@ -25,17 +26,19 @@
                      dialogHeight =  height;
                 }
                 if(width) {
-                    dialogWidth = defaultWidth;
+                    dialogWidth = width;
                 }
-                AtKtVanillaModel.setHeight(dialogHeight);
-                AtKtVanillaModel.setWidth(dialogWidth);
+              //  AtKtVanillaModel.setHeight(dialogHeight);
+               // AtKtVanillaModel.setWidth(dialogWidth);
             },
 
             setHeight: function(height) {
-                $(vanillaBody).height(height + "px");
+                $(vanillaModalContents).height(height + "px");
+                var bodyHeight = (height -50) + "px";
+                $(vanillaBody).css({height:bodyHeight});
             },
             setWidth: function(width) {
-                $(vanillaBody).width(width+ "px");
+                $(vanillaModalContents).width(width+ "px");
             },
 
             setTitle: function(title) {
@@ -51,6 +54,10 @@
                 AtKtVanillaModel.setModalBodyContents(contents);
                 AtKtVanillaModel.setTitle(title);
                 $(vanilaDivId).modal('show');
+            },
+
+            hideModal : function() {
+                $(vanilaDivId).modal('hide');
             }
         }
     }());
